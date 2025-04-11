@@ -16,7 +16,8 @@ import { MatCardModule } from '@angular/material/card';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductReadComponent } from './component/product/product-read/product-read.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar'
-import { HttpClient } from '@angular/common/http';
+import { FornecedorReadComponent } from './component/Fornecedor/fornecedor-read/fornecedor-read.component';
+import { PagamentoReadComponent } from './component/Pagamento/pagamento-read/pagamento-read.component';
 
 
 @NgModule({
@@ -27,7 +28,9 @@ import { HttpClient } from '@angular/common/http';
     FooterComponent,
     HomeComponent,
     ProductCrudComponent,
-    ProductReadComponent
+    ProductReadComponent,
+    FornecedorReadComponent,
+    PagamentoReadComponent
   ],
   imports: [
     BrowserModule,
@@ -37,8 +40,7 @@ import { HttpClient } from '@angular/common/http';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatSnackBarModule,
-    HttpClient
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
